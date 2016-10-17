@@ -1,0 +1,52 @@
+ [fernandak@pem-24 lista11]$ git init
+Initialized empty Git repository in /home/fernandak/fernanda/pem/lista11/.git/
+[fernandak@pem-24 lista11]$ git config --global user.name fernandakvmelo
+[fernandak@pem-24 lista11]$ git config --global user.email melo.fernanda@academico.ifpb.edu.br
+
+[fernandak@pem-24 testePEM]$ git clone https://github.com/layhana/testePEM.git
+Cloning into 'testePEM'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+[fernandak@pem-24 testePEM]$ cd testePEM
+[fernandak@pem-24 testePEM]$ touch test3
+[fernandak@pem-24 testePEM]$ git add test3
+[fernandak@pem-24 testePEM]$ git commit -m  teste 3
+[master c50babd]  teste 3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test3
+[fernandak@pem-24 testePEM]$ git push -u origin master
+Username for 'https://github.com': fernandakvmelo
+Password for 'https://fernandakvmelo@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 303 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/layhana/testePEM.git
+   be3ee92..c50babd  master -> master
+Branch master set up to track remote branch master from origin.
+
+[fernandak@pem-24 testePEM]$ git log
+commit c50babd08a48a852f60f87de9fac152533a3aadd
+Author: fernandakvmelo <melo.fernanda@academico.ifpb.edu.br>
+Date:   Mon Oct 17 10:17:08 2016 -0300
+
+     teste 3
+
+commit be3ee9242e3d8787e09057d4c6ca1fc1e895d745
+Author: layhana <layhanagss@gmail.com>
+Date:   Mon Oct 17 10:09:44 2016 -0300
+
+    Fiz um novo comentario
+
+commit 27adaccbe1ddee1e184d9bd1e0e268cf73e622c5
+Author: layhana <layhanagss@gmail.com>
+Date:   Mon Oct 17 09:33:09 2016 -0300
+
+    comentario
+[fernandak@pem-24 testePEM]$ git pull
+Already up-to-date.
+
